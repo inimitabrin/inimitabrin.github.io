@@ -313,6 +313,12 @@ div.nav.responsive {position: relative;}
 
 @media (max-width:600px) {
 
+  header .site-logo img {
+  max-height: 30px;
+  margin-top:30px;
+  margin-right: 0;
+}
+
  div.nav.responsive ul {
     margin-top: 30px;
     margin-right: 20px;
@@ -339,11 +345,6 @@ footer ul li {
 }
 
 @media (max-width:482px) {
-header .site-logo img {
-  max-height: 30px;
-  margin-top:30px;
-  margin-right: 0;
-}
 
   footer p {
   display: none;
