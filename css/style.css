@@ -123,10 +123,7 @@ header .nav ul li.hamburger-icon {
 
 .case-studies {
   padding: 1em 0;
-  display: flex;           
-  flex-direction: column;     
-  justify-content: center;
-  align-items: center; 
+
 }
 
 .case-studies h3 {
@@ -137,8 +134,11 @@ header .nav ul li.hamburger-icon {
 }
 
 .case-studies ul {
-  display: inline;
-  text-align: center;
+  display: flex;           
+  flex-direction: row; 
+  flex-wrap: wrap;    
+  justify-content: center;
+  align-items: center; 
   margin: 0;
 }
 
@@ -230,6 +230,17 @@ footer ul li img {
   Media Queries
   =====================================================
 */
+
+@media (max-width:1000px) {
+  .case-studies ul {
+  display: flex;           
+  flex-direction: row; 
+  flex-wrap: wrap;    
+  justify-content: center;
+  align-items: center; 
+}
+}
+
 @media (max-width:917px) {
 
 header .site-logo img {
