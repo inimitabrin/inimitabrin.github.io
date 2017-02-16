@@ -1,0 +1,212 @@
+html, body {
+  overflow-x: hidden;
+}
+
+/* 
+  =====================================================
+  Custom Styles
+  =====================================================
+*/
+
+body {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  background-color: #FFFFFF;
+}
+
+/* 
+  =====================================================
+  Buttons
+  =====================================================
+*/
+
+.button {
+  font-weight: 500;
+  padding: 15px 30px;
+  background: #29A2EF;
+}
+
+.button {
+  color: #FFFFFF;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+
+/* 
+  =====================================================
+  Header
+  =====================================================
+*/
+
+header .nav {
+  padding: 1em 0;
+  color: #FFFFFF;
+}
+
+header .site-logo img {
+  max-height: 75px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  float: left;
+}
+
+header .nav ul {
+  display: inline;
+  text-align: right;
+  float: right;
+  margin: 0;
+}
+
+header .nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 20px 40px 25px;
+}
+
+header .nav ul li a {
+  color: #6C7A88;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* 
+  =====================================================
+  Hero
+  =====================================================
+*/
+
+.hero {
+  background-image: linear-gradient(0deg, #FFFFFF 0%, #B9FDE8 48%, #B9FDE8 100%);
+  margin-top: 55px;
+  height: 680px;
+}
+
+.hero .herotext {
+  text-align: right;
+  width: 590px;
+  float: right;
+  margin-top: -40px;
+  margin-right: 20px;
+}
+
+.hero .herotext h1 {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  color: #515C67;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.hero .herotext h2 {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  color: #515C67;
+  font-size: 30;
+  font-weight: 100;
+}
+
+/* 
+  =====================================================
+  Case Studies
+  =====================================================
+*/
+
+.case-studies {
+  padding: 1em 0;
+}
+
+.case-studies h3 {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  color: #6C7A88;
+  font-weight: bold;
+  margin-left: 50px;
+}
+
+.case-studies ul {
+  display: inline;
+  text-align: center;
+  margin: 0;
+}
+
+.case-studies ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 10px;
+}
+
+/* 
+  =====================================================
+  Contact
+  =====================================================
+*/
+
+.contact {
+  display: flex;              /* establish flex container */
+  flex-direction: column;     /* stack flex items vertically */
+  justify-content: center;    /* center items vertically, in this case */
+  align-items: center; 
+  background-image: linear-gradient(-180deg, #FFFFFF 0%, #B9FDE8 100%);
+  height: 290px;
+  margin-top: 35px;
+}
+
+.contact h3 {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  color: #6C7A88;
+  font-weight: 500px;
+  text-align: center;
+}
+
+.contact h4 {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  color: #6C7A88;
+  font-weight: 100;
+  text-align: center;
+  margin-top: -5px;
+}
+
+.contact .button {
+  text-align: center;
+  width: 100px;
+  display: block;
+}
+
+/* 
+  =====================================================
+  Footer
+  =====================================================
+*/
+
+footer {
+  background-color: #6C7A88;
+  height: 75px;
+}
+
+footer p {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 22px;
+  float: left;
+  margin-top: 25px;
+  color: #FFFFFF;
+  margin-left: 20px;
+}
+
+footer ul {
+  display: inline;
+  text-align: right;
+  margin: 0 20px;
+  float: right;
+}
+
+footer ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 15px 20px 0;
+}
+
+footer ul li img {
+  height: 45px;
+}
