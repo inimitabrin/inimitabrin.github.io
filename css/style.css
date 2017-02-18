@@ -381,6 +381,14 @@ margin-top: 20px;
   display: inline-block;
 }
 
+.container .smallest {
+  width: 30%;
+}
+
+.container .smaller {
+  width: 46%;
+}
+
 /* 
   =====================================================
   Footer
@@ -483,6 +491,10 @@ div.nav.responsive {position: relative;}
     height: 160px;
   }
 
+  .hero .cornerlogo {
+  height: 130px;
+}
+
   div.nav.responsive ul {
     background-color: #FFFFFF;
     margin-top: 30px;
@@ -525,6 +537,10 @@ div.nav.responsive {position: relative;}
 .hero .logo {
   height: 160px;
 }
+
+.hero .cornerlogo {
+  height: 130px;
+}
 }
 
 @media (max-width:600px) {
@@ -548,6 +564,10 @@ div.nav.responsive {position: relative;}
 
 .hero .logo {
   height: 150px;
+}
+
+.hero .cornerlogo {
+  height: 100px;
 }
 
 .hero .herotext h2 {
@@ -587,19 +607,19 @@ footer ul li {
   }
 
 .hero .logo {
-  height: 120px;
+  height: 130px;
 }
   .about img {
     height: 300px;
   }
 
+.hero .cornerlogo {
+  height: 50px;
+}
+
   .about p {
     font-size: 16px;
   }
-
-  .multimages img {
-  height: 200px;
-}
 
 .container .quote {
   margin-top: -30px;
