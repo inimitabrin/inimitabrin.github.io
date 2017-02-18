@@ -23,9 +23,7 @@ body {
   font-weight: 500;
   padding: 15px 30px;
   background: #29A2EF;
-}
-
-.button {
+  display: inline-block;
   color: #FFFFFF;
   text-decoration: none;
   text-align: center;
@@ -246,10 +244,136 @@ header .nav ul li.hamburger-icon {
   margin-top: -5px;
 }
 
-.contact .button {
+/* 
+  =====================================================
+  Case Studies (own page)
+  =====================================================
+*/
+
+.logo {
+  position: absolute;
+  top: 20%;
+  right: 40%;
+  z-index: 100;
+  max-height: 190px;
+}
+
+.container {
+  width: 90%;
+  margin: -225px 5% -50px;
+
+}
+
+.one-half {
+  width: 46%;
+  margin: 15px;
+  display: inline-block;
+}
+
+.container .jumpto h1 {
+ font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  color: #282F36;
   text-align: center;
-  width: 100px;
-  display: block;
+  font-weight: 500;
+}
+
+.container .jumpto a {
+  text-decoration: none;
+  color: #282F36;
+}
+
+.container .jumpto a:hover {
+  color: #6BC2A4;
+}
+
+.container h2 {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  font-size: 22px;
+  color: #282F37;
+  padding-bottom: 3px;
+  border-bottom: 2px solid #6C7A88;
+}
+
+.container p {
+font-family: "Open Sans", Helvetica, Arial, sans-serif;
+font-size: 20px;
+color: #282F36;
+line-height: 40px;
+font-weight: 100;
+margin-bottom: 40px;
+margin-top: 20px;
+}
+
+.container p a {
+  color: #282F36;
+}
+
+.container p a:hover {
+  color: #6BC2A4;
+}
+
+.container h3 {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  color: #6C7A88;
+  font-weight: 500;
+  border-bottom: 2px solid #6BC2A4;
+}
+
+.container hr {
+  border-color: #6BC2A4;
+}
+
+.container .graph {
+  vertical-align: 150px; 
+}
+
+.container .va {
+  vertical-align: 275px;
+}
+
+.container .multimages {
+  display: flex;           
+  flex-direction: row; 
+  flex-wrap: wrap;    
+  justify-content: center;
+  align-items: center;
+}
+
+.container .multimages img {
+  margin: 20px;
+  margin-bottom: 40px;
+}
+
+.container h4 {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 44px;
+  color: #282F36;
+  display: inline;
+  padding-top: 10px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.container h5 {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: #6C7A88;
+  display: inline;
+  font-weight: 500;
+  margin-top: -30px;
+}
+
+.container .quote {
+  text-align: center;
+  vertical-align: top;
+  margin-top: 300px;
+}
+
+.buttonwrap {
+  text-align: center;
 }
 
 /* 
@@ -323,6 +447,14 @@ header .nav ul li {
 header .nav ul li a {
   font-size: 18px;
 }
+
+.one-half {
+  width: 90%;
+}
+
+.container .quote {
+  margin-top: 0;
+}
 }
 
 @media (max-width:825px) {
@@ -340,6 +472,10 @@ div.nav.responsive {position: relative;}
     position: absolute;
     right: 0;
     top: 0;
+  }
+
+  .hero .logo {
+    height: 160px;
   }
 
   div.nav.responsive ul {
@@ -366,6 +502,10 @@ div.nav.responsive {position: relative;}
   .hero {
     height: 500px;
   }
+
+  .container .va {
+    vertical-align: top;
+  }
 }
 
 @media (max-width:688px) {
@@ -375,6 +515,10 @@ div.nav.responsive {position: relative;}
 
   footer ul li img {
   height: 30px;
+}
+
+.hero .logo {
+  height: 160px;
 }
 }
 
@@ -397,6 +541,10 @@ div.nav.responsive {position: relative;}
   font-weight: bold;
 }
 
+.hero .logo {
+  height: 150px;
+}
+
 .hero .herotext h2 {
   font-size: 18px;
   width: 300px;
@@ -409,6 +557,10 @@ footer ul li {
   list-style-type: none;
   margin: 20px 10px 0;
   }
+
+.container {
+  margin-top: -200px;
+}
 }
 
 @media (max-width:482px) {
@@ -429,6 +581,9 @@ footer ul li {
     height: 175px;
   }
 
+.hero .logo {
+  height: 120px;
+}
   .about img {
     height: 300px;
   }
@@ -436,6 +591,14 @@ footer ul li {
   .about p {
     font-size: 16px;
   }
+
+  .multimages img {
+  height: 200px;
+}
+
+.container .quote {
+  margin-top: -30px;
+}
 
 }
 
@@ -464,5 +627,21 @@ footer ul li {
 
 footer ul li img {
   height: 25px;
+}
+
+.container .jumpto h1{
+  font-size: 16px;
+}
+
+.container h2, h3, h4, h5, p{
+  font-size: 16px;
+}
+
+.container p {
+  font-size: 16px;
+}
+
+.container h3 {
+  font-size: 16px;
 }
 }
