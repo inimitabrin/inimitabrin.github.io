@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>Breanna Bliss, Bay Area UX Designer | Lunch Break</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:500,900|Open+Sans:100,500" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+
+  <!-- JS -->
+  <script src="js/responsivemenu.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <div class="site-logo"><a href="index.html"><img src="images/logo.png" /></a></div>
+    <div class="nav" id="nav">
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html#case-studies">Work</a></li>
+        <li><a href="#">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="hamburger-icon">
+          <a href="javascript:void(0);" onclick="myFunction()"><img src="images/hamburger.png" /></a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <div class="hero">
+    <img src="images/lunchbreak2.png" alt="Lunch Break logo" class="logo" /><img src="images/lunchbreaktop.png" alt="" class="bg"/>
+  </div>
+  <div class="container">
+    <div class="jumpto">
+      <h1>Jump to:  <a href="#summary">Summary</a> - <a href="#problem">Problem</a> - <a href="#solution">Solution</a> - <a href="#process">Process</a> - <a href="#conclusions">Conclusions</a> - <a href="#next">What's next</a></h1>
+    </div>
+    <div id="summary" class="contentitem">
+      <h2>Summary</h2>
+      <p>Eating alone is no fun, but it’s hard to find lunch companions if you’re new to an area, have social anxiety, or are just looking for a bit of a change. Lunch Break aims to solve that problem by giving people a simple way of finding others nearby who are looking for good food and conversation.</p>
+    </div>
+    <div id="problem" class="contentitem">
+      <h2>Problem</h2>
+      <p>Lunchtime can be an excellent time to socialize with friends or coworkers, but when you don’t have anyone to eat with, lunchtime can be a low point in your day. This is only compounded for people who have difficulty engaging in social activities, or even just for people who find themselves having to meet new people and not knowing how to go about it. While there are apps centered around meeting people, the majority are for dating or chatting, neither of which fill the platonic and lunchtime-specific niche.</p>
+    </div>
+    <div id="solution" class="contentitem">
+      <h2>Solution</h2>
+      <p>Lunch Break collects users that want to have lunch with others and provides location, chat, and calendar services. In this way, it allows users to find people nearby, talk with them before and after lunch, and schedule a time to eat together, all without leaving the app. <a href="https://invis.io/KG9W330R9">You can find a clickable prototype here.</a></p>
+    </div>
+    <div id="process" class="contentitem">
+      <h2>Process</h2>
+      <h3>conceptualization</h3>
+      <p>While trying to come up with an idea for an app, I recalled a news story from a while back about a kid who created an app for kids to find people to eat lunch with at school. I remember being impressed by the idea and wishing it were something I had been able to take advantage of when I was in high school. Obviously I’m not in high school anymore, but I still eat lunch alone, so I decided I would be a little self-indulgent and design the sort of app I wanted to see in my own life.</p>
+      <h3>paper prototyping</h3>
+      <p>With that idea firmly in my mind, I started with a rough paper prototype so that I could get right to user testing.</p>
+      <div class="buttonwrap"><img class="small" src="images/lunchbreakpaper.jpg" alt="A paper prototype of some screens of Lunch Break" /></div>
+      <p>Feedback was mostly positive: the people I tested thought it was an interesting idea, and the flow of navigation through the prototype went well. I made note of the changes people wanted (the use of likes/dislikes/other on the profile page was an object of contention, for example--what was ‘other’ supposed to mean?--and it was unclear how to enlarge the profile information from the map view and also that you could swipe down to go back to the map view from another user’s profile).</p>
+    <h3>high-fidelity wireframes</h3>
+     <p>I was able to make the high-fidelity wireframe fairly quickly based off of the initial paper prototype with the changes I had noted.</p>
+     <div class="buttonwrap"><img class="small" src="images/lunchbreakhifi.png" alt="Some high-fidelity screens from Lunch Break" /></div>
+     <p>With the high-fidelity wireframe completed, I moved onto the second round of user testing. Mostly, feedback centered around the ‘settings’ screen and the mechanic for re-centering the map. The latter was a simple shift--I just changed the icon to mimic other map apps so that the familiarity would reduce confusion--but the settings screen was a different challenge. People pointed out that they had no way of knowing that search filters were on their settings page until they clicked on their settings out of idle curiosity, and they expected their account information to be on their edit profile screen. Accordingly, I got rid of the settings screen entirely and made a new dropdown menu on the search bar for filters and moved account information to the edit profile screen.</p>
+     <h3>branding</h3>
+     <p>Before I moved on to the visual design portion of the process, I had to decide on a color palette, typefaces, and an icon. I wanted to evoke a cheerful feeling, so I ended up going with a bright color palette: orange accented with a light yellow, and blue for buttons. I decided to keep the typeface to San Francisco, as is the norm for iOS apps, but I got stuck on the logo.</p>
+     <div class="buttonwrap"><img class="small" src="images/lunchbreakearlylogos.png" alt="Some early logos for Lunch Break" /></div>
+     <p>It was pointed out to me that my initial designs focused more on the typefaces than iconography, and also that for an app that was centered around bringing two people together, there wasn’t much focus on duality. Others pointed out that the name I had been using up to that point, Lunch Date, made it seem like the app was for dating.</p>
+     <p class="one-half">I brainstormed more names and eventually decided on a close synonym, Lunch Break. For the icon, I brainstormed some more.</p>
+     <img class="one-half" src="images/lunchbreaklogobrainstorm.png" alt="A brainstorm for some more Lunch Break logos" />
+     <p>I ended up going with the imagery of two brown lunch bags. For me, that brings to mind the easy feeling of making new friends in kindergarten. Because it’s my hope that Lunch Break would share that feeling, I thought it was fitting.</p>
+     <div class="buttonwrap"><img class="small" src="images/lunchbreakbranding.png" alt="The final style guide for Lunch Break" /></div>
+     <h3>visual design</h3>
+     <p class="one-half va">I went through a lot of changes in the visual design phase, but after some time, it too was ready for a third round of user testing. I was delighted to hear some of the users say that they would use the app if it were real, and also that it was straightforward to use, but there was still a lot of great constructive criticism to implement for the final version!</p>
+     <img class="one-half" src="images/lunchbreakoldvis.png" alt="Some screens from an older iteration of Lunch Break" />
+     <p> People requested that the filter icon be more clear and to include a link to the filter on the sidebar. They also expressed some confusion about the meaning of the symbols on the calendar. Finally, someone wanted the app to look ‘fancier’. To solve these problems, I changed the filter icon to mimic the one used in Yelp for the sake of familiarity, added the filter to the sidebar, and changed the symbols on the calendar slightly. In the finished app, there would also be a walkthrough at the beginning to complete the onboarding process and reduce confusion. To make the app look more polished, I went back to Apple’s Human Interface Guidelines and implemented some minor cosmetic changes.</p>
+     <div class="buttonwrap"><a class="button" href="https://invis.io/KG9W330R9">go to prototype</a></div>
+    </div>
+    <div id="conclusions" class="contentitem">
+      <h2>Conclusions</h2>
+      <p>Lunch Break was my first project done with the training wheels off, so to speak, and in some places it definitely showed. In my eagerness to get to prototyping, I neglected to do a formal user survey at the beginning, which could have informed my prototype and the features I would implement, and while I had a good mental picture of the competition, I never did a formal SWOT analysis. Both of these are glaring omissions that really could have helped me overcome a few hurdles when I was struggling to make informed choices during the prototyping phase. That said, making these mistakes also ensured that I would never repeat them, and I think that in the end it’s probably a lot better that I slipped up early on than to do it at a later point in my journey.<br><br>Working on Lunch Break also taught me the importance of using familiar patterns and keeping things simple so that users don’t have to work too hard to use your product, and that’s a lesson that I’ll definitely use in the future as well. While it was a challenging project, I’m really grateful I had the opportunity to work on an idea that meant so much to me and that others could see my vision and want to join in.</p>
+    <div id="next" class="contentitem">
+      <h2>So, what's next?</h2>
+      <p>The first phase of Lunch Break, were it an actual app, would be to gain users. The second phase would be refining the design and seeing where users dropped off. As an app that really relies on sheer numbers to realize its purpose, it would be extremely important that Lunch Break retained users and kept people coming back.</p>
+    </div>
+  </div>
+  </div>
+  <div class="contact">
+    <h3>See something interesting?</h3>
+    <h4>Let's talk about it!</h4>
+    <a class="button" href="contact.html">Contact me</a>
+  </div>
+  <footer>
+  <p>&copy; 2017 Breanna Bliss</p>
+  <ul>
+    <li><a href="https://www.linkedin.com/in/breanna-m-bliss"><img src="images/linkedin.png" alt="LinkedIn" /></a></li>
+    <li><a href="https://twitter.com/inimitabrin"><img src="images/twitter.png" alt="Twitter" /></a></li>
+    <li><a href="https://github.com/inimitabrin"><img src="images/github.png" alt="Github" /></a></li>
+    <li><a href="mailto:breanna.m.bliss@gmail.com"><img src="images/email.png" alt="Email" /></a></li>
+</body>
+</html>

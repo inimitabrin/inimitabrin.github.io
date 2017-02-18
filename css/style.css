@@ -376,6 +376,11 @@ margin-top: 20px;
   text-align: center;
 }
 
+.container .small {
+  width: 80%;
+  display: inline-block;
+}
+
 /* 
   =====================================================
   Footer
