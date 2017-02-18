@@ -130,7 +130,7 @@ header .nav ul li.hamburger-icon {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
   color: #6C7A88;
   font-weight: bold;
-  margin-left: 50px;
+  margin-left: 75px;
 }
 
 .case-studies ul {
@@ -150,7 +150,73 @@ header .nav ul li.hamburger-icon {
 
 /* 
   =====================================================
-  Contact
+  About
+  =====================================================
+*/
+
+.about {
+  width: 90%;
+  text-align: left;
+  margin: -150px auto;
+}
+
+.aboutheading {
+  padding-bottom: 3px;
+  border-bottom: 2px solid #6C7A88;
+}
+
+.about .aboutheading h1 {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  color: #282F36;
+  font-weight: 500;
+}
+
+.about p {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  color: #282F36;
+  line-height: 40px;
+  font-weight: 100;
+}
+
+.about img {
+  height: 462px;
+  display: block;
+  margin: -40px auto;
+
+}
+
+/* 
+  =====================================================
+  Contact (own page)
+  =====================================================
+*/
+
+.contactmessage {
+  margin: -200px auto -100px;
+  display: flex;              /* establish flex container */
+  flex-direction: column;     /* stack flex items vertically */
+  justify-content: center;    /* center items vertically, in this case */
+  align-items: center;
+}
+
+.contactmessage h1 {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-size: 26px;
+  color: #282F36;
+  font-weight: 500;
+  margin: 10px;
+}
+
+.contactmessage iframe {
+  display: block;
+  margin: auto;
+}
+
+/* 
+  =====================================================
+  Contact (on page)
   =====================================================
 */
 
@@ -222,6 +288,7 @@ footer ul li {
 
 footer ul li img {
   height: 45px;
+  display: flex; 
 }
 
 
@@ -360,6 +427,14 @@ footer ul li {
 
   .case-studies ul li img {
     height: 175px;
+  }
+
+  .about img {
+    height: 300px;
+  }
+
+  .about p {
+    font-size: 16px;
   }
 
 }
