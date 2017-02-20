@@ -709,7 +709,7 @@ footer ul li img {
 @media (max-width: 600px) screen and (orientation:landscape) {
     .hero .logo {
       position: absolute;
-      top: 35%;
+      top: 15%;
       right: 45%;
     }
 }
