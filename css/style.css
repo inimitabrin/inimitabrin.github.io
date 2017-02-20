@@ -705,3 +705,9 @@ footer ul li img {
   font-size: 16px;
 }
 }
+
+@media screen and (orientation:landscape) {
+    .hero .logo {
+        top: 30%;
+    }
+}
