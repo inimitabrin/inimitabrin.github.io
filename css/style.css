@@ -22,7 +22,7 @@ body {
 .button {
   font-weight: 500;
   padding: 15px 30px;
-  background: #29A2EF;
+  background: #CB0000;
   display: inline-block;
   color: #FFFFFF;
   text-decoration: none;
@@ -86,7 +86,7 @@ header .nav ul li.hamburger-icon {
 */
 
 .hero {
-  background-image: linear-gradient(0deg, #FFFFFF 0%, #B9FDE8 48%, #B9FDE8 100%);
+  background-image: linear-gradient(0deg, #FFFFFF 0%, #56E2F4 48%, #56E2F4 100%);
   margin-top: 70px;
   height: 600px;
 }
@@ -111,6 +111,14 @@ header .nav ul li.hamburger-icon {
   color: #515C67;
   font-size: 30;
   font-weight: 100;
+}
+
+.hero img {
+  margin-left: -350px;
+}
+
+.hero #aboutpic {
+  margin-left: -500px;
 }
 
 /* 
@@ -223,7 +231,7 @@ header .nav ul li.hamburger-icon {
   flex-direction: column;     /* stack flex items vertically */
   justify-content: center;    /* center items vertically, in this case */
   align-items: center; 
-  background-image: linear-gradient(-180deg, #FFFFFF 0%, #B9FDE8 100%);
+  background-image: linear-gradient(-180deg, #FFFFFF 0%, #56E2F4 100%);
   height: 290px;
   margin-top: 35px;
 }
@@ -319,7 +327,7 @@ margin-top: 20px;
   font-size: 20px;
   color: #6C7A88;
   font-weight: 500;
-  border-bottom: 2px solid #6BC2A4;
+  border-bottom: 2px solid #0FBCDE;
 }
 
 .container hr {
@@ -479,7 +487,7 @@ header .nav ul li a {
 @media (max-width:825px) {
 
    .hero #aboutpic {
-  margin-left: -200px;
+  margin-left: -400px;
 }
 
 div.nav ul li{display: none;}
@@ -498,11 +506,11 @@ div.nav.responsive {position: relative;}
   }
 
   .hero .logo {
-    height: 160px;
+    height: 100px;
   }
 
   .hero .cornerlogo {
-  height: 130px;
+  height: 100px;
 }
 
   div.nav.responsive ul {
@@ -545,11 +553,11 @@ div.nav.responsive {position: relative;}
 }
 
 .hero .logo {
-  height: 160px;
+  height: 100px;
 }
 
 .hero .cornerlogo {
-  height: 130px;
+  height: 100px;
 }
 }
 
@@ -562,7 +570,7 @@ div.nav.responsive {position: relative;}
 }
 
  .hero #aboutpic {
-  margin-left: -300px;
+  margin-left: -500px;
 }
 
  div.nav.responsive ul {
@@ -577,7 +585,7 @@ div.nav.responsive {position: relative;}
 }
 
 .hero .logo {
-  height: 150px;
+  height: 100px;
 }
 
 .hero .cornerlogo {
@@ -609,7 +617,7 @@ footer ul li {
   }
 
    .hero #aboutpic {
-  margin-left: -400px;
+  margin-left: -600px;
 }
 
 footer ul li {
@@ -625,8 +633,9 @@ footer ul li {
   }
 
 .hero .logo {
-  height: 130px;
+  height: 100px;
 }
+
   .about img {
     height: 300px;
   }
