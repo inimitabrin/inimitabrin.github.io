@@ -707,15 +707,15 @@ footer ul li img {
 }
 
 @media (max-width: 600px) screen and (orientation:landscape) {
-    .logo {
+    .hero .logo {
       position: absolute;
-      top: 50%;
       right: 45%;
+      bottom: 80%;
     }
 
-    .cornerlogo {
+    .hero .cornerlogo {
       position: absolute;
-      top: 50%;
+      top: 80px;
       right: 45%;
     }
 }
