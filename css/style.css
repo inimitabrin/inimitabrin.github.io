@@ -510,7 +510,7 @@ div.nav.responsive {position: relative;}
   }
 
   .hero .cornerlogo {
-  height: 100px;
+  height: 120px;
 }
 
   div.nav.responsive ul {
@@ -557,7 +557,7 @@ div.nav.responsive {position: relative;}
 }
 
 .hero .cornerlogo {
-  height: 100px;
+  height: 120px;
 }
 }
 
@@ -597,7 +597,7 @@ div.nav.responsive {position: relative;}
 }
 
 .hero .cornerlogo {
-  height: 100px;
+  height: 120px;
 }
 
 .hero .herotext h2 {
@@ -708,14 +708,12 @@ footer ul li img {
 
 @media (max-width: 600px) screen and (orientation:landscape) {
     .hero .logo {
-      position: absolute;
+      top: 40%;
       right: 45%;
-      bottom: 70%;
     }
 
     .hero .cornerlogo {
-      position: absolute;
-      top: 80px;
+      top: 40%;
       right: 45%;
     }
 }
