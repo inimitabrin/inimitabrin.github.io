@@ -763,6 +763,11 @@ footer ul li img {
 .container h3 {
   font-size: 16px;
 }
+
+.container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
 }
 
 @media (max-width: 329px) and (max-height: 550px) {
