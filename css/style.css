@@ -706,7 +706,7 @@ footer ul li img {
 }
 }
 
-@media (max-width: 600px) screen and (orientation:landscape) {
+@media screen and (orientation:landscape) {
     .hero .logo {
       top: 40%;
       right: 45%;
