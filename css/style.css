@@ -708,10 +708,10 @@ footer ul li img {
 
 @media screen and (orientation:landscape) {
     .hero .logo {
-      margin-top: 50px;
+      margin-top: 40px;
     }
 
     .hero .cornerlogo {
-      margin-top: 50px;
+      margin-top: 40px;
     }
 }
