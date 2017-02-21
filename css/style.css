@@ -650,7 +650,7 @@ footer ul li {
 
 .cornerlogo {
   height: 75px;
-  margin-left: 70px;
+  left: 100%;
 }
 
   .about p {
