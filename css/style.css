@@ -164,7 +164,7 @@ header .nav ul li.hamburger-icon {
 .about {
   max-width: 1000px;
   text-align: left;
-  margin: -150px 10%;
+  margin: -150px 20%;
 }
 
 .aboutheading {
@@ -712,6 +712,11 @@ footer ul li {
   margin-left: 10%;
   margin-right: 10%;
 }
+.about {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 }
 
 @media (min-width: 330px) and (max-width: 550px) and (min-height: 551px) 
@@ -731,6 +736,11 @@ footer ul li {
   margin-left: 10%;
   margin-right: 10%;
 }
+
+.about {
+  margin-left: 10%;
+  margin-right: 10%;
+}
 }
 
 @media (min-width: 320px) and (max-width: 550px) and (min-height: 680px) 
@@ -747,6 +757,11 @@ footer ul li {
   }
 
   .container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.about {
   margin-left: 10%;
   margin-right: 10%;
 }
