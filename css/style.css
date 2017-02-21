@@ -691,6 +691,11 @@ footer ul li {
     top: 0;
     margin-top: 160px;
   }
+
+  .container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
 }
 
 @media (min-width: 330px) and (max-width: 550px) and (min-height: 551px) 
@@ -705,6 +710,11 @@ footer ul li {
     top: 0;
     margin-top: 130px;
   }
+
+  .container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
 }
 
 @media (min-width: 320px) and (max-width: 550px) and (min-height: 680px) 
@@ -719,6 +729,11 @@ footer ul li {
     top: 0;
     margin-top: 130px;
   }
+
+  .container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
 }
 
 @media (max-width: 360px) {
