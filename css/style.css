@@ -113,12 +113,12 @@ header .nav ul li.hamburger-icon {
   font-weight: 100;
 }
 
-.hero img {
-  margin-left: -350px;
-}
-
 .hero #aboutpic {
   margin-left: -500px;
+}
+
+.hero .bg {
+  height: 400px;
 }
 
 /* 
@@ -260,16 +260,16 @@ header .nav ul li.hamburger-icon {
 
 .logo {
   position: absolute;
-  top: 20%;
-  right: 40%;
+  top: 0;
+  margin-top: 130px;
+  left: 40%;
   z-index: 100;
-  max-height: 190px;
+  max-height: 150px;
 }
 
 .container {
-  width: 90%;
-  margin: -225px 5% -50px;
-
+  width: 80%;
+  margin: -225px 10% -50px;
 }
 
 .one-half {
@@ -498,20 +498,18 @@ div.nav ul li.hamburger-icon {
     margin-top: 10px;
   }
 
-div.nav.responsive {position: relative;}
+div.nav.responsive {
+  position: relative;
+}
   div.nav.responsive ul li.hamburger-icon {
     position: absolute;
     right: 0;
     top: 0;
   }
 
-  .hero .logo {
-    height: 100px;
-  }
-
   .hero .cornerlogo {
   height: 100px;
-  top: 15%;
+  top: 20%;
 }
 
   div.nav.responsive ul {
@@ -531,7 +529,7 @@ div.nav.responsive {position: relative;}
     text-align: left;
   }
 
-  .hero img {
+  .hero .bg {
   height: 300px;
   } 
 
@@ -542,6 +540,12 @@ div.nav.responsive {position: relative;}
   .container .va {
     vertical-align: top;
   }
+
+  .hero .logo {
+    height: 100px;
+    top: 0;
+    margin-top: 145px;
+    left: 35%;
 }
 
 @media (max-width:688px) {
@@ -553,13 +557,17 @@ div.nav.responsive {position: relative;}
   height: 30px;
 }
 
-.hero .logo {
-  height: 100px;
+.cornerlogo {
+  left: 20%;
 }
 
-.hero .cornerlogo {
-  height: 100px;
-}
+.logo {
+    top: 0;
+    margin-top: 120px;
+    left: 35%;
+    height: 100px;
+  }
+
 }
 
 @media (max-width:600px) {
@@ -574,14 +582,6 @@ div.nav.responsive {position: relative;}
   margin-left: -500px;
 }
 
-.logo {
-  position: absolute;
-  top: 20%;
-  right: 40%;
-  z-index: 100;
-  max-height: 190px;
-}
-
  div.nav.responsive ul {
     margin-top: 30px;
     margin-right: 20px;
@@ -591,15 +591,6 @@ div.nav.responsive {position: relative;}
   .hero .herotext h1 {
   font-size: 24px;
   font-weight: bold;
-}
-
-.hero .logo {
-  height: 100px;
-}
-
-.hero .cornerlogo {
-  height: 100px;
-  left: 90%;
 }
 
 .hero .herotext h2 {
@@ -642,18 +633,9 @@ footer ul li {
     height: 175px;
   }
 
-.hero .logo {
-  height: 100px;
-}
-
   .about img {
     height: 300px;
   }
-
-.cornerlogo {
-  height: 100px;
-  left: 130%;
-}
 
   .about p {
     font-size: 16px;
@@ -664,9 +646,45 @@ footer ul li {
 }
 }
 
-@media (max-width: 390px) {
-  .hero .cornerlogo {
-    left: 100%;
+@media (min-width: 320px) and (max-width: 460px) and (max-height: 550px) 
+{
+  .cornerlogo {
+    left: 13%;
+    margin-top: 70px;
+  }
+
+  .logo {
+    height: 100px;
+    top: 0;
+    margin-top: 130px;
+  }
+}
+
+@media (min-width: 330px) and (max-width: 460px) and (min-height: 551px) 
+{
+  .cornerlogo {
+    height: 75px;
+    left: 13%;
+    margin-top: 20px;
+  }
+
+.logo {
+    top: 0;
+    margin-top: 130px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 460px) and (min-height: 680px) 
+{
+  .cornerlogo {
+    height: 75px;
+    left: 10%;
+    margin-top: 10px;
+  }
+
+  .logo {
+    top: 0;
+    margin-top: 130px;
   }
 }
 
@@ -676,14 +694,9 @@ footer ul li {
     margin-right: 20px;
     width: 100px;
   }
-
-  .hero .cornerlogo {
-  height: 100px;
-  left: 110%;
-}
 }
 
-@media (max-width:340px) {
+@media (max-width: 340px) {
 
 header .site-logo img {
   max-height: 25px;
@@ -717,22 +730,33 @@ footer ul li img {
 .container h3 {
   font-size: 16px;
 }
+}
 
-.hero .cornerlogo {
-  height: 100px;
-  left: 115%;
+@media (max-width: 329px) and (max-height: 550px) {
+  .hero .cornerlogo {
+    left: 10%;
+    height: 90px;
+    margin-top: 100px;
+  }
+
+.logo {
+  left: 27%;
   top: 0;
-  margin-top: 120px;
-}
+  margin-top: 130px;
 }
 
-@media screen and (orientation:landscape) {
-    .hero .logo {
-      margin-top: 40px;
-    }
+}
 
-    .cornerlogo {
-      margin-top: 50px;
-      margin-left: 20px;
-    }
+@media (max-width: 329px) and (min-height: 551px) {
+  .hero .cornerlogo {
+    left: 10%;
+    height: 90px;
+    margin-top: 20px;
+  }
+
+  .logo {
+    left: 27%;
+    top: 0;
+    margin-top: 130px;
+  }
 }
