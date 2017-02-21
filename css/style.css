@@ -564,7 +564,7 @@ div.nav.responsive {
     .hero .logo {
     height: 100px;
     top: 0;
-    margin-top: 145px;
+    margin-top: 160px;
     left: 35%;
 }
 
@@ -841,6 +841,6 @@ footer ul li img {
   .logo {
     left: 25%;
     top: 0;
-    margin-top: 130px;
+    margin-top: 160px;
   }
 }
