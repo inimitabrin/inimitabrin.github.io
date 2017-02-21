@@ -710,10 +710,12 @@ footer ul li img {
     .hero .logo {
       top: 40%;
       right: 45%;
+      margin-top: 30px;
     }
 
     .hero .cornerlogo {
       top: 40%;
       right: 45%;
+      margin-top: 30px;
     }
 }
