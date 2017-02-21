@@ -111,6 +111,7 @@ header .nav ul li.hamburger-icon {
   color: #515C67;
   font-size: 30;
   font-weight: 100;
+  margin-bottom: 60px;
 }
 
 .hero #aboutpic {
@@ -128,7 +129,7 @@ header .nav ul li.hamburger-icon {
 */
 
 .case-studies {
-  padding: 1em 0;
+  padding: 5em 10px 1em;
 
 }
 
@@ -261,15 +262,24 @@ header .nav ul li.hamburger-icon {
 .logo {
   position: absolute;
   top: 0;
-  margin-top: 130px;
+  margin-top: 120px;
+  left: 40%;
+  z-index: 100;
+  max-height: 160px;
+}
+
+.cornerlogo {
+  position: absolute;
+  top: 0;
+  margin-top: 145px;
   left: 40%;
   z-index: 100;
   max-height: 150px;
 }
 
 .container {
-  width: 80%;
-  margin: -225px 10% -50px;
+  max-width: 1000px;
+  margin: -225px 20% -50px;
 }
 
 .one-half {
@@ -489,8 +499,13 @@ header .nav ul li a {
    .hero #aboutpic {
   margin-left: -400px;
 }
+  .hero .cornerlogo {
+    margin-top: 160px;
+  }
 
-div.nav ul li{display: none;}
+div.nav ul li {
+  display: none;
+}
 
 div.nav ul li.hamburger-icon {
     float: right;
@@ -509,7 +524,6 @@ div.nav.responsive {
 
   .hero .cornerlogo {
   height: 100px;
-  top: 20%;
 }
 
   div.nav.responsive ul {
@@ -540,12 +554,29 @@ div.nav.responsive {
   .container .va {
     vertical-align: top;
   }
+}
 
-  .hero .logo {
+@media (max-width: 825px) and (min-width: 600px) {
+    .hero .logo {
     height: 100px;
     top: 0;
     margin-top: 145px;
     left: 35%;
+}
+}
+
+@media (max-width: 825px) and (min-width: 600px) and (min-height: 551px) {
+  .cornerlogo {
+  margin-top: 25px;
+  left: 35%;
+}
+}
+
+@media (max-width: 825px) and (min-width: 600px) and (max-height: 550px) {
+  .cornerlogo {
+  margin-top: 80px;
+  left: 35%;
+}
 }
 
 @media (max-width:688px) {
@@ -558,13 +589,14 @@ div.nav.responsive {
 }
 
 .cornerlogo {
-  left: 20%;
+  left: 25%;
+  margin-top: 170px;
 }
 
 .logo {
     top: 0;
-    margin-top: 120px;
-    left: 35%;
+    margin-top: 160px;
+    left: 33%;
     height: 100px;
   }
 
@@ -646,26 +678,27 @@ footer ul li {
 }
 }
 
-@media (min-width: 320px) and (max-width: 460px) and (max-height: 550px) 
+@media (min-width: 320px) and (max-width: 550px) and (max-height: 550px) 
 {
-  .cornerlogo {
-    left: 13%;
-    margin-top: 70px;
+  .hero .cornerlogo {
+    height: 75px;
+    left: 25%;
+    margin-top: 180px;
   }
 
   .logo {
     height: 100px;
     top: 0;
-    margin-top: 130px;
+    margin-top: 160px;
   }
 }
 
-@media (min-width: 330px) and (max-width: 460px) and (min-height: 551px) 
+@media (min-width: 330px) and (max-width: 550px) and (min-height: 551px) 
 {
-  .cornerlogo {
+  .hero .cornerlogo {
     height: 75px;
-    left: 13%;
-    margin-top: 20px;
+    left: 25%;
+    margin-top: 180px;
   }
 
 .logo {
@@ -674,12 +707,12 @@ footer ul li {
   }
 }
 
-@media (min-width: 320px) and (max-width: 460px) and (min-height: 680px) 
+@media (min-width: 320px) and (max-width: 550px) and (min-height: 680px) 
 {
-  .cornerlogo {
+  .hero .cornerlogo {
     height: 75px;
-    left: 10%;
-    margin-top: 10px;
+    left: 25%;
+    margin-top: 180px;
   }
 
   .logo {
@@ -734,13 +767,13 @@ footer ul li img {
 
 @media (max-width: 329px) and (max-height: 550px) {
   .hero .cornerlogo {
-    left: 10%;
-    height: 90px;
-    margin-top: 100px;
+    left: 15%;
+    height: 75px;
+    margin-top: 200px;
   }
 
 .logo {
-  left: 27%;
+  left: 25%;
   top: 0;
   margin-top: 130px;
 }
@@ -755,7 +788,7 @@ footer ul li img {
   }
 
   .logo {
-    left: 27%;
+    left: 25%;
     top: 0;
     margin-top: 130px;
   }
