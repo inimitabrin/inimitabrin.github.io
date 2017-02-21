@@ -162,9 +162,9 @@ header .nav ul li.hamburger-icon {
 */
 
 .about {
-  width: 90%;
+  max-width: 1000px;
   text-align: left;
-  margin: -150px auto;
+  margin: -150px 10%;
 }
 
 .aboutheading {
@@ -466,6 +466,10 @@ header .nav ul li a {
   font-size: 20px;
 }
 
+.hero #aboutpic {
+  margin-left: -700px;
+}
+
 }
 
 @media (max-width:917px) {
@@ -497,7 +501,7 @@ header .nav ul li a {
 @media (max-width:825px) {
 
    .hero #aboutpic {
-  margin-left: -400px;
+  margin-left: -900px;
 }
   .hero .cornerlogo {
     margin-top: 160px;
@@ -563,6 +567,7 @@ div.nav.responsive {
     margin-top: 145px;
     left: 35%;
 }
+
 }
 
 @media (max-width: 825px) and (min-width: 600px) and (min-height: 551px) {
@@ -641,6 +646,10 @@ footer ul li {
 .container {
   margin-top: -200px;
 }
+
+.hero #aboutpic {
+  margin-left: -1000px;
+}
 }
 
 @media (max-width:482px) {
@@ -675,6 +684,13 @@ footer ul li {
 
 .container .quote {
   margin-top: -30px;
+}
+}
+
+@media (min-width: 320px) and (max-width: 550px) {
+  .hero #aboutpic {
+  margin-left: -800px;
+  height: 400px;
 }
 }
 
