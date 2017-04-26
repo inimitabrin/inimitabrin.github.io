@@ -39,7 +39,7 @@ body {
 
 header .nav {
   padding: 1em 0;
-  color: #FFFFFF;
+  height: 100px;
 }
 
 header .site-logo img {
@@ -48,6 +48,7 @@ header .site-logo img {
   margin-bottom: 15px;
   margin-left: 5px;
   float: left;
+  padding: 20px;
 }
 
 header .nav ul {
@@ -61,13 +62,14 @@ header .nav ul li {
   list-style-type: none;
   display: inline-block;
   margin: 20px 20px 25px;
+  padding: 20px 15px;
 }
 
 header .nav ul li a {
   color: #6C7A88;
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
   font-size: 22px;
-  font-weight: bold;
+  font-weight: 500;
   text-decoration: none;
 }
 
@@ -87,15 +89,16 @@ header .nav ul li.hamburger-icon {
 
 .hero {
   background-image: linear-gradient(0deg, #FFFFFF 0%, #56E2F4 48%, #56E2F4 100%);
-  margin-top: 70px;
-  height: 600px;
+  height: 250px;
+  text-align: center;
+  clear: both;
 }
 
 .hero .herotext {
   text-align: right;
   width: 590px;
   float: right;
-  margin-top: -40px;
+  margin-top: 100px;
   margin-right: 20px;
 }
 
@@ -103,7 +106,7 @@ header .nav ul li.hamburger-icon {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
   color: #515C67;
   font-size: 34px;
-  font-weight: bold;
+  font-weight: 300;
 }
 
 .hero .herotext h2 {
@@ -112,10 +115,6 @@ header .nav ul li.hamburger-icon {
   font-size: 30;
   font-weight: 100;
   margin-bottom: 60px;
-}
-
-.hero #aboutpic {
-  margin-left: -500px;
 }
 
 .hero .bg {
@@ -129,8 +128,8 @@ header .nav ul li.hamburger-icon {
 */
 
 .case-studies {
-  padding: 5em 10px 1em;
-
+  padding: 1em 10px 1em;
+  margin-top: 40px;
 }
 
 .case-studies h3 {
@@ -260,26 +259,20 @@ header .nav ul li.hamburger-icon {
 */
 
 .logo {
-  position: absolute;
-  top: 0;
-  margin-top: 135px;
-  left: 40%;
-  z-index: 100;
   max-height: 160px;
+  margin: 40px auto;
+  clear: both;
 }
 
 .cornerlogo {
-  position: absolute;
-  top: 0;
-  margin-top: 145px;
-  left: 40%;
-  z-index: 100;
   max-height: 150px;
+  margin: 40px auto;
+  clear: both;
 }
 
 .container {
   max-width: 1000px;
-  margin: -225px 20% -50px;
+  margin: 0 20% -50px;
 }
 
 .one-half {
@@ -466,13 +459,9 @@ header .nav ul li a {
   font-size: 20px;
 }
 
-.hero #aboutpic {
-  margin-left: -700px;
 }
 
-}
-
-@media (max-width:917px) {
+@media (max-width:2000px) {
 
 header .site-logo img {
   max-height: 60px;
@@ -498,14 +487,7 @@ header .nav ul li a {
 }
 }
 
-@media (max-width:825px) {
-
-   .hero #aboutpic {
-  margin-left: -900px;
-}
-  .hero .cornerlogo {
-    margin-top: 160px;
-  }
+@media (max-width:925px) {
 
 div.nav ul li {
   display: none;
@@ -526,10 +508,6 @@ div.nav.responsive {
     top: 0;
   }
 
-  .hero .cornerlogo {
-  height: 100px;
-}
-
   div.nav.responsive ul {
     background-color: #FFFFFF;
     margin-top: 30px;
@@ -547,42 +525,11 @@ div.nav.responsive {
     text-align: left;
   }
 
-  .hero .bg {
-  height: 300px;
-  } 
-
-  .hero {
-    height: 500px;
-  }
-
   .container .va {
     vertical-align: top;
   }
 }
 
-@media (max-width: 825px) and (min-width: 600px) {
-    .hero .logo {
-    height: 100px;
-    top: 0;
-    margin-top: 160px;
-    left: 35%;
-}
-
-}
-
-@media (max-width: 825px) and (min-width: 600px) and (min-height: 551px) {
-  .cornerlogo {
-  margin-top: 25px;
-  left: 35%;
-}
-}
-
-@media (max-width: 825px) and (min-width: 600px) and (max-height: 550px) {
-  .cornerlogo {
-  margin-top: 80px;
-  left: 35%;
-}
-}
 
 @media (max-width:688px) {
   footer p {
@@ -592,18 +539,6 @@ div.nav.responsive {
   footer ul li img {
   height: 30px;
 }
-
-.cornerlogo {
-  left: 25%;
-  margin-top: 170px;
-}
-
-.logo {
-    top: 0;
-    margin-top: 160px;
-    left: 33%;
-    height: 100px;
-  }
 
 }
 
@@ -615,10 +550,6 @@ div.nav.responsive {
   margin-right: 0;
 }
 
- .hero #aboutpic {
-  margin-left: -500px;
-}
-
  div.nav.responsive ul {
     margin-top: 30px;
     margin-right: 20px;
@@ -627,14 +558,15 @@ div.nav.responsive {
 
   .hero .herotext h1 {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 500;
+  margin-top: 100px;
 }
 
 .hero .herotext h2 {
   font-size: 18px;
   width: 300px;
   float: right;
-  margin-top: -10px;
+  margin-top: 20px;
 }
 
 footer ul li {
@@ -643,13 +575,6 @@ footer ul li {
   margin: 20px 10px 0;
   }
 
-.container {
-  margin-top: -200px;
-}
-
-.hero #aboutpic {
-  margin-left: -1000px;
-}
 }
 
 @media (max-width:482px) {
@@ -657,10 +582,6 @@ footer ul li {
   footer p {
   display: none;
   }
-
-   .hero #aboutpic {
-  margin-left: -600px;
-}
 
 footer ul li {
   display: inline-block;
@@ -685,28 +606,14 @@ footer ul li {
 .container .quote {
   margin-top: -30px;
 }
-}
 
-@media (min-width: 320px) and (max-width: 550px) {
-  .hero #aboutpic {
-  margin-left: -800px;
-  height: 400px;
+.cornerlogo {
+  max-height: 100px;
 }
 }
 
 @media (min-width: 320px) and (max-width: 550px) and (max-height: 550px) 
 {
-  .hero .cornerlogo {
-    height: 75px;
-    left: 25%;
-    margin-top: 180px;
-  }
-
-  .logo {
-    height: 100px;
-    top: 0;
-    margin-top: 160px;
-  }
 
   .container {
   margin-left: 10%;
@@ -721,16 +628,6 @@ footer ul li {
 
 @media (min-width: 330px) and (max-width: 550px) and (min-height: 551px) 
 {
-  .hero .cornerlogo {
-    height: 75px;
-    left: 25%;
-    margin-top: 180px;
-  }
-
-.logo {
-    top: 0;
-    margin-top: 160px;
-  }
 
   .container {
   margin-left: 10%;
@@ -745,16 +642,6 @@ footer ul li {
 
 @media (min-width: 320px) and (max-width: 550px) and (min-height: 680px) 
 {
-  .hero .cornerlogo {
-    height: 75px;
-    left: 25%;
-    margin-top: 180px;
-  }
-
-  .logo {
-    top: 0;
-    margin-top: 160px;
-  }
 
   .container {
   margin-left: 10%;
@@ -775,13 +662,22 @@ footer ul li {
   }
 }
 
-@media (max-width: 340px) {
+@media (max-width: 400px) {
 
 header .site-logo img {
   max-height: 25px;
   margin-top:30px;
   margin-right: 0;
   margin-left: 5px;
+  padding-right: 0;
+}
+
+div.nav ul li.hamburger-icon img{
+  height: 30px;
+}
+
+div.nav ul li.hamburger-icon {
+  margin: 10px 0;
 }
 
 footer ul li {
@@ -816,31 +712,3 @@ footer ul li img {
 }
 }
 
-@media (max-width: 329px) and (max-height: 550px) {
-  .hero .cornerlogo {
-    left: 15%;
-    height: 75px;
-    margin-top: 200px;
-  }
-
-.logo {
-  left: 25%;
-  top: 0;
-  margin-top: 130px;
-}
-
-}
-
-@media (max-width: 329px) and (min-height: 551px) {
-  .hero .cornerlogo {
-    left: 10%;
-    height: 90px;
-    margin-top: 20px;
-  }
-
-  .logo {
-    left: 25%;
-    top: 0;
-    margin-top: 160px;
-  }
-}
