@@ -13,9 +13,11 @@
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/dropit.css">
 
   <!-- JS -->
-  <script src="js/responsivemenu.js"></script>
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/dropit.js"></script>
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -27,30 +29,60 @@
 
 </script>
 
+<script type="text/javascript">
+var slideshowtext = [
+    "<h2>a passionate advocate of using compassion to make great, human-centered designs</h2>",
+    "<h2>a design enthusiast and research expert</h2>",
+    "<h2>a detail fanatic and iteration devotee<h2>",
+    "<h2>a bad pun lover and obscure fact master<h2>",
+    "<h2>a bay area ux designer and researcher</h2>"
+    ];
+
+var i = 0;
+
+setInterval(function() {
+$("#slideshow").html(slideshowtext[i]);
+    if (i == slideshowtext.length) {
+        i = 0;
+    }
+    else {
+        i++;
+    }
+}, 10 * 400);
+</script>
+
 </head>
 
 <body>
-  <header>
+<div class="pagetop">
+    <div class="nav">
     <div class="site-logo"><a href="index.html"><img src="images/logo.png" /></a></div>
-    <div class="nav" id="nav">
-      <ul>
-        <li><a href="about.html">About</a></li>
+      <ul id="vismenu">
         <li><a href="#case-studies">Work</a></li>
         <li><a href="http://www.breannabliss.com/files/breannablissresume.pdf">Resume</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li class="hamburger-icon">
-          <a href="javascript:void(0);" onclick="myFunction()"><img src="images/hamburger.png" /></a>
-        </li>
-      </ul>
+        </ul>
+      <ul id="dropitnav" class="menu">
+      <li><a href="#" class="btn">&#9776;</a>
+        <ul>
+        <li><a href="#case-studies">Work</a></li>
+        <li><a href="http://www.breannabliss.com/files/breannablissresume.pdf">Resume</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </li>
+     </ul>
     </div>
-  </header>
   <div class="hero">
-    <!--<img src="images/herotop.png" alt=""/>-->
     <div class="herotext">
-     <h1 class="animated fadeIn">breanna bliss&#58;</h1>
-     <h2 class="animated fadeIn">a bay area ux designer with an unabashed love for transforming the stories of real people into easy-to-use designs</h2>
+     <h1 class="animated fadeIn">breanna bliss:</h1>
+      <div id="slideshow" class="animated fadeIn"> 
+        <h2>a bay area ux designer and researcher</h2>
+      </div>
     </div>
   </div>
+</div>
   <div class="case-studies" id="case-studies">
    <h3>Case Studies</h3>
     <ul>
@@ -79,6 +111,11 @@
 
   ga('create', 'UA-92234468-1', 'auto');
   ga('send', 'pageview');
+
+  $(document).ready(function() {
+  $('#dropitnav').dropit();
+  });
+
 
 </script>
 </body>
