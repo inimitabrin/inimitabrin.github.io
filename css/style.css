@@ -10,7 +10,7 @@ html, body {
 
 body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  background-color: #FFFFFF;
+  background-color: #B6DBFB;
 }
 
 /* 
@@ -104,9 +104,9 @@ body {
 
 .hero {
   background-image: url("../images/homepagehero.png");
-  background-size: contain;
+  background-size: 100%;
   background-repeat: no-repeat;
-  height: 570px;
+  height: 400px;
   text-align: center;
   clear: both;
 }
@@ -129,6 +129,7 @@ body {
 
 .hero .herotext h2 {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  margin-top: -12px;
   color: #515C67;
   font-size: 30;
   font-weight: 100;
@@ -143,13 +144,47 @@ body {
 .case-studies {
   padding: 1em 10px 1em;
   margin-top: 40px;
+  text-align: center;
+}
+
+.case-studies .csbacking {
+  background-image: url(../images/casestudybacking.png);
+  background-size: 1500px;
+  background-repeat: no-repeat;
+  height: 290px;
+}
+
+.case-studies .csbacking img {
+  float: left;
+  margin: 55px 10px 10px;
+  width: 300px;
+}
+
+.case-studies #shizuka p {
+  padding-top: 30px;
+}
+
+.case-studies .csbacking p {
+ font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  color: #282525;
+  letter-spacing: 0.17px;
+  text-align: left;
+  padding-top: 60px;
+}
+
+.case-studies .csbacking a {
+  color: #000000;
+  font-weight: 500;
 }
 
 .case-studies h3 {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
-  color: #6C7A88;
-  font-weight: bold;
-  margin-left: 75px;
+  font-size: 30px;
+  margin-top: -10px;
+  color: #282525;
+  letter-spacing: 0.17px;
 }
 
 .case-studies ul {
@@ -174,63 +209,32 @@ body {
 */
 
 .about {
-  max-width: 1000px;
-  text-align: left;
-  margin: -150px 20%;
-}
-
-.aboutheading {
-  padding-bottom: 3px;
-  border-bottom: 2px solid #6C7A88;
-}
-
-.about .aboutheading h1 {
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
-  font-size: 22px;
-  color: #282F36;
-  font-weight: 500;
-}
-
-.about p {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 20px;
-  color: #282F36;
-  line-height: 40px;
-  font-weight: 100;
-}
-
-.about img {
-  height: 462px;
-  display: block;
-  margin: -40px auto;
-
-}
-
-/* 
-  =====================================================
-  Contact (own page)
-  =====================================================
-*/
-
-.contactmessage {
-  margin: -200px auto -100px;
+  background-image: url("../images/homepageabt.png");
+  background-size: 100%;
+  height: 450px;
+  text-align: center;
+  background-repeat: no-repeat;
   display: flex;              /* establish flex container */
   flex-direction: column;     /* stack flex items vertically */
   justify-content: center;    /* center items vertically, in this case */
-  align-items: center;
+  align-items: center; 
+
 }
 
-.contactmessage h1 {
+.about h3 {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
-  font-size: 26px;
-  color: #282F36;
-  font-weight: 500;
-  margin: 10px;
+  font-size: 30px;
+  margin-top: -5px;
+  color: #282525;
+  letter-spacing: 0.17px;
 }
-
-.contactmessage iframe {
-  display: block;
-  margin: auto;
+.about p {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  color: #282525;
+  margin-top: -10px;
+  width: 600px;
 }
 
 /* 
@@ -244,9 +248,12 @@ body {
   flex-direction: column;     /* stack flex items vertically */
   justify-content: center;    /* center items vertically, in this case */
   align-items: center; 
-  background-image: linear-gradient(-180deg, #FFFFFF 0%, #56E2F4 100%);
-  height: 290px;
-  margin-top: 35px;
+  background-image: url("../images/homepagecontact.png");
+  background-size: 150%;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 300px;
+  margin-top: 30px;
 }
 
 .contact h3 {
@@ -472,6 +479,21 @@ footer ul li img {
   font-size: 20px;
 }
 
+.about p {
+  width: 500px;
+  margin-left:100px; 
+}
+
+.about h3 {
+  margin-top: -100px;
+  margin-left: 100px;
+}
+
+.about {
+  height: 600px;
+  background-size: 130%;
+}
+
 }
 
 @media (max-width:2000px) {
@@ -506,6 +528,28 @@ footer ul li img {
   .container .va {
     vertical-align: top;
   }
+
+   .hero {
+  background-position: center top;
+  background-size: 150%;
+ }
+
+ .about {
+  background-size: 200%;
+  text-align: right;
+ }
+
+ .about p {
+  margin-left: auto;
+  margin-right: 30px;
+  width: 350px;
+ }
+
+ .about h3 {
+  padding-top: 50px;
+  margin-left: auto;
+  margin-right: 40px;
+ }
 }
 
 
@@ -516,6 +560,43 @@ footer ul li img {
 
   footer ul li img {
   height: 30px;
+}
+
+.about {
+  background-image: url("../images/homepageabt2.png");
+  background-size: 1500px;
+  background-position: top right;
+  justify-content: flex-end;
+  height: 1000px;
+  width: 100%;
+  margin: 0;
+}
+
+.about h3 {
+  margin-top: -50px;
+}
+
+.about p {
+  width: 300px;
+  margin-right: 10px;
+}
+
+.case-studies .csbacking {
+  height: 450px;
+  display: flex;              /* establish flex container */
+  flex-direction: column;     /* stack flex items vertically */
+  justify-content: center;    /* center items vertically, in this case */
+  align-items: center; 
+
+}
+
+.case-studies .csbacking p {
+  font-size: 18px;
+}
+
+.case-studies .csbacking img {
+  width: 200px;
+  margin-bottom: -20px;
 }
 
 }
@@ -534,18 +615,23 @@ footer ul li img {
   margin: 5px 0;
 }
 
- .hero {
-  background-position: center top;
-  background-size: 200%;
- }
+.contact {
+  background-size: 1300px;
+  height: 300px;
+}
+
+.hero {
+   background-size: 200%;
+  height: 200px;
+}
 
   .hero .herotext h1 {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 500;
 }
 
 .hero .herotext h2 {
-  font-size: 18px;
+  font-size: 16px;
   width: 300px;
   margin-top: -10px;
 }
@@ -576,14 +662,6 @@ footer ul li {
     height: 175px;
   }
 
-  .about img {
-    height: 300px;
-  }
-
-  .about p {
-    font-size: 16px;
-  }
-
 .container .quote {
   margin-top: -30px;
 }
@@ -600,10 +678,6 @@ footer ul li {
   margin-left: 10%;
   margin-right: 10%;
 }
-.about {
-  margin-left: 10%;
-  margin-right: 10%;
-}
 
 }
 
@@ -615,10 +689,6 @@ footer ul li {
   margin-right: 10%;
 }
 
-.about {
-  margin-left: 10%;
-  margin-right: 10%;
-}
 }
 
 @media (min-width: 320px) and (max-width: 550px) and (min-height: 680px) 
@@ -629,10 +699,6 @@ footer ul li {
   margin-right: 10%;
 }
 
-.about {
-  margin-left: 10%;
-  margin-right: 10%;
-}
 }
 
 @media (max-width: 400px) {
