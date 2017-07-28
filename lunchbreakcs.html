@@ -13,48 +13,56 @@
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/dropit.css">
 
   <!-- JS -->
-  <script src="js/responsivemenu.js"></script>
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/dropit.js"></script>
 
 </head>
 
 <body>
-  <header>
+   <div class="pagetop">
+    <div class="nav">
     <div class="site-logo"><a href="index.html"><img src="images/logo.png" /></a></div>
-    <div class="nav" id="nav">
-      <ul>
-        <li><a href="about.html">About</a></li>
+      <ul id="vismenu">
         <li><a href="index.html#case-studies">Work</a></li>
         <li><a href="http://www.breannabliss.com/files/breannablissresume.pdf">Resume</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li class="hamburger-icon">
-          <a href="javascript:void(0);" onclick="myFunction()"><img src="images/hamburger.png" /></a>
-        </li>
-      </ul>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      <ul id="dropitnav" class="menu">
+      <li><a href="#" class="btn">&#9776;</a>
+        <ul>
+        <li><a href="index.html#case-studies">Work</a></li>
+        <li><a href="http://www.breannabliss.com/files/breannablissresume.pdf">Resume</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </li>
+     </ul>
     </div>
-  </header>
-  <div class="hero">
-    <img src="images/lunchbreak2.png" alt="Lunch Break logo" class="logo" /><!--<img src="images/lunchbreaktop.png" alt="" class="bg"/>-->
   </div>
+  <div class="hero-cs">
+    <img src="images/lunchbreak2.png" alt="Lunch Break logo" class="logo" /><!--<img src="images/lunchbreaktop.png" alt="" class="bg"/>-->
+    <h1>Lunch Break</h1>
+    <h3>the map for meeting people</h3>
+  </div>
+  <div class="containerbacking">
   <div class="container">
-    <div class="jumpto">
+    <!--<div class="jumpto">
       <h1>Jump to:  <a href="#summary">Summary</a> - <a href="#problem">Problem</a> - <a href="#solution">Solution</a> - <a href="#process">Process</a> - <a href="#conclusions">Conclusions</a> - <a href="#next">What's next</a></h1>
-    </div>
+    </div>-->
     <div id="summary" class="contentitem">
-      <h2>Summary</h2>
       <p>Eating alone is no fun, but it’s hard to find lunch companions if you’re new to an area, have social anxiety, or are just looking for a bit of a change. Lunch Break aims to solve that problem by giving people a simple way of finding others nearby who are looking for good food and conversation.</p>
     </div>
     <div id="problem" class="contentitem">
-      <h2>Problem</h2>
       <p>Lunchtime can be an excellent time to socialize with friends or coworkers, but when you don’t have anyone to eat with, lunchtime can be a low point in your day. This is only compounded for people who have difficulty engaging in social activities, or even just for people who find themselves having to meet new people and not knowing how to go about it. While there are apps centered around meeting people, the majority are for dating or chatting, neither of which fill the platonic and lunchtime-specific niche.</p>
     </div>
     <div id="solution" class="contentitem">
-      <h2>Solution</h2>
       <p>Lunch Break collects users that want to have lunch with others and provides location, chat, and calendar services. In this way, it allows users to find people nearby, talk with them before and after lunch, and schedule a time to eat together, all without leaving the app. <a href="https://invis.io/KG9W330R9">You can find a clickable prototype here.</a></p>
     </div>
     <div id="process" class="contentitem">
-      <h2>Process</h2>
       <h3>conceptualization</h3>
       <p>While trying to come up with an idea for an app, I recalled a news story from a while back about a kid who created an app for kids to find people to eat lunch with at school. I remember being impressed by the idea and wishing it were something I had been able to take advantage of when I was in high school. Obviously I’m not in high school anymore, but I still eat lunch alone, so I decided I would be a little self-indulgent and design the sort of app I wanted to see in my own life.</p>
       <h3>paper prototyping</h3>
@@ -88,10 +96,11 @@
     </div>
   </div>
   </div>
+  </div>
   <div class="contact">
     <h3>See something interesting?</h3>
     <h4>Let's talk about it!</h4>
-    <a class="button" href="contact.html">Contact me</a>
+    <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSd855zIYNIu1sd2Fcq_-_vFrscvY2BGG1HIUvXvWlsH4wviqA/viewform?usp=sf_link">Contact me</a>
   </div>
   <footer>
   <p>&copy; 2017 Breanna Bliss</p>
@@ -109,6 +118,11 @@
   ga('create', 'UA-92234468-1', 'auto');
   ga('send', 'pageview');
 
+</script>
+
+<script>  $(document).ready(function() {
+  $('#dropitnav').dropit();
+  });
 </script>
 </body>
 </html>

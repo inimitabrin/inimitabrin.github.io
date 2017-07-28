@@ -13,48 +13,57 @@
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/dropit.css">
 
   <!-- JS -->
-  <script src="js/responsivemenu.js"></script>
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/dropit.js"></script>
 
 </head>
 
 <body>
-  <header>
+   <div class="pagetop">
+    <div class="nav">
     <div class="site-logo"><a href="index.html"><img src="images/logo.png" /></a></div>
-    <div class="nav" id="nav">
-      <ul>
-        <li><a href="about.html">About</a></li>
+      <ul id="vismenu">
         <li><a href="index.html#case-studies">Work</a></li>
         <li><a href="http://www.breannabliss.com/files/breannablissresume.pdf">Resume</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li class="hamburger-icon">
-          <a href="javascript:void(0);" onclick="myFunction()"><img src="images/hamburger.png" /></a>
-        </li>
-      </ul>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      <ul id="dropitnav" class="menu">
+      <li><a href="#" class="btn">&#9776;</a>
+        <ul>
+        <li><a href="index.html#case-studies">Work</a></li>
+        <li><a href="http://www.breannabliss.com/files/breannablissresume.pdf">Resume</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </li>
+     </ul>
     </div>
-  </header>
-  <div class="hero">
-    <img src="images/kitchkit2.png" alt="KitchKit logo" class="logo" /><!--<img src="images/kitchkittop.png" alt="" class="bg"/>-->
   </div>
+  <div class="hero-cs">
+    <img src="images/kitchkit2.png" alt="KitchKit logo" class="logo" />
+    <h1>kitchkit</h1>
+    <h3>the site for subscription boxes</h3>
+  </div>
+    <!--<img src="images/kitchkittop.png" alt="" class="bg"/>-->
+  <div class="containerbacking">
   <div class="container">
-    <div class="jumpto">
+    <!--<div class="jumpto">
       <h1>Jump to:  <a href="#summary">Summary</a> - <a href="#problem">Problem</a> - <a href="#solution">Solution</a> - <a href="#process">Process</a> - <a href="#conclusions">Conclusions</a> - <a href="#next">What's next</a></h1>
-    </div>
+    </div>-->
     <div id="summary" class="contentitem">
-      <h2>Summary</h2>
       <p>Tasked with creating a website to showcase a product, I conceptualized a subscription box called KitchKit, which sends users kitchen tools, dry ingredients, and recipes from a spotlight country every month. I then designed an intuitive online shopping experience for those looking to order a plan.</p>
     </div>
     <div id="problem" class="contentitem">
-      <h2>Problem</h2>
       <p>The problem was twofold: first, how to design a product that fills a consumer need, and second, how to design a website for ordering the product that both entices users to buy and reduces subsequent customer drop-off.</p>
     </div>
     <div id="solution" class="contentitem">
-      <h2>Solution</h2>
       <p>While there are many food-related subscription boxes out there, most focus on either fusion cuisine or novelty food items, and all come with the expectation that you already have the requisite cooking tools. KitchKit occupies the remaining niche of global pantry staples, plus the tools and recipes needed to cook authentic regional food with those ingredients. The site designed to sell it is easy to navigate and sells the product well. <a href="https://invis.io/W8AEBYLND">The website’s prototype can be found here.</a></p>
     </div>
     <div id="process" class="contentitem">
-      <h2>Process</h2>
       <h3>survey</h3>
       <p class="one-half">As an avid fan of both subscription boxes and cooking, I knew I wanted to do something that married the two--but I didn’t know much beyond that. To get a better idea of what users might want in a kitchen-related subscription box, I sent out a survey to cooks and bakers in order to ascertain:
      <br><br>•Current kitchen habits,
@@ -97,10 +106,11 @@
     </div>
   </div>
   </div>
+  </div>
   <div class="contact">
     <h3>See something interesting?</h3>
     <h4>Let's talk about it!</h4>
-    <a class="button" href="contact.html">Contact me</a>
+    <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSd855zIYNIu1sd2Fcq_-_vFrscvY2BGG1HIUvXvWlsH4wviqA/viewform?usp=sf_link">Contact me</a>
   </div>
   <footer>
   <p>&copy; 2017 Breanna Bliss</p>
@@ -118,6 +128,11 @@
   ga('create', 'UA-92234468-1', 'auto');
   ga('send', 'pageview');
 
+</script>
+
+<script>  $(document).ready(function() {
+  $('#dropitnav').dropit();
+  });
 </script>
 </body>
 </html>

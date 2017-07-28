@@ -10,7 +10,7 @@ html, body {
 
 body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  background-color: #FFFFFF;
+  background-color: #B6DBFB;
 }
 
 /* 
@@ -22,7 +22,7 @@ body {
 .button {
   font-weight: 500;
   padding: 15px 30px;
-  background: #CB0000;
+  background: #1B6595;
   display: inline-block;
   color: #FFFFFF;
   text-decoration: none;
@@ -37,35 +37,37 @@ body {
   =====================================================
 */
 
-header .nav {
+.nav {
+  background-color: #E9E9E9;
+}
+
+.nav {
   padding: 1em 0;
-  height: 100px;
+  height: 75px;
 }
 
-header .site-logo img {
+.pagetop .nav .site-logo {
+  display: inline-block;
+}
+.pagetop .nav .site-logo img {
   max-height: 75px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-left: 5px;
+  padding-left: 10px;
   float: left;
-  padding: 20px;
 }
 
-header .nav ul {
+#vismenu {
   display: inline;
   text-align: right;
   float: right;
-  margin: 0;
+  margin-top: -5px;
 }
 
-header .nav ul li {
+#vismenu li {
   list-style-type: none;
   display: inline-block;
-  margin: 20px 20px 25px;
-  padding: 20px 15px;
 }
 
-header .nav ul li a {
+.pagetop .nav ul li a {
   color: #6C7A88;
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
   font-size: 22px;
@@ -73,11 +75,24 @@ header .nav ul li a {
   text-decoration: none;
 }
 
-header .nav ul li a:hover {
-  color: #6BC2A4;
+ .pagetop .nav .btn {
+  color: #6C7A88;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-size: 50px;
+  float: right;
+  font-weight: 500;
+  text-decoration: none;
+ }
+
+.nav #dropitnav .dropit-trigger {
+  margin: -5px 10px;
+ }
+
+.nav ul li a:hover {
+  color: #000000;
 }
 
-header .nav ul li.hamburger-icon {
+#dropitnav {
   display: none;
 }
 
@@ -88,18 +103,21 @@ header .nav ul li.hamburger-icon {
 */
 
 .hero {
-  background-image: linear-gradient(0deg, #FFFFFF 0%, #56E2F4 48%, #56E2F4 100%);
-  height: 250px;
+  background-image: url("../images/homepagehero.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 400px;
   text-align: center;
   clear: both;
 }
 
 .hero .herotext {
-  text-align: right;
-  width: 590px;
-  float: right;
-  margin-top: 100px;
-  margin-right: 20px;
+  text-align: center;
+  padding-top: 8%;
+  display: flex;              /* establish flex container */
+  flex-direction: column;     /* stack flex items vertically */
+  justify-content: center;    /* center items vertically, in this case */
+  align-items: center; 
 }
 
 .hero .herotext h1 {
@@ -111,14 +129,10 @@ header .nav ul li.hamburger-icon {
 
 .hero .herotext h2 {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  margin-top: -12px;
   color: #515C67;
   font-size: 30;
   font-weight: 100;
-  margin-bottom: 60px;
-}
-
-.hero .bg {
-  height: 400px;
 }
 
 /* 
@@ -130,13 +144,52 @@ header .nav ul li.hamburger-icon {
 .case-studies {
   padding: 1em 10px 1em;
   margin-top: 40px;
+  text-align: center;
+  display: flex;              /* establish flex container */
+  flex-direction: column;     /* stack flex items vertically */
+  justify-content: center;    /* center items vertically, in this case */
+  align-items: center; 
+}
+
+.case-studies .csbacking {
+  background-image: url(../images/casestudybacking.png);
+  background-size: 1500px;
+  background-repeat: no-repeat;
+  height: 290px;
+}
+
+.case-studies .csbacking img {
+  float: left;
+  margin: 55px 10px 10px;
+  width: 300px;
+}
+
+.case-studies #shizuka p {
+  padding-top: 30px;
+}
+
+.case-studies .csbacking p {
+ font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  color: #282525;
+  letter-spacing: 0.17px;
+  text-align: left;
+  padding-top: 60px;
+  max-width: 1000px;
+}
+
+.case-studies .csbacking a {
+  color: #000000;
+  font-weight: 500;
 }
 
 .case-studies h3 {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
-  color: #6C7A88;
-  font-weight: bold;
-  margin-left: 75px;
+  font-size: 30px;
+  margin-top: -10px;
+  color: #282525;
+  letter-spacing: 0.17px;
 }
 
 .case-studies ul {
@@ -161,63 +214,32 @@ header .nav ul li.hamburger-icon {
 */
 
 .about {
-  max-width: 1000px;
-  text-align: left;
-  margin: -150px 20%;
-}
-
-.aboutheading {
-  padding-bottom: 3px;
-  border-bottom: 2px solid #6C7A88;
-}
-
-.about .aboutheading h1 {
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
-  font-size: 22px;
-  color: #282F36;
-  font-weight: 500;
-}
-
-.about p {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 20px;
-  color: #282F36;
-  line-height: 40px;
-  font-weight: 100;
-}
-
-.about img {
-  height: 462px;
-  display: block;
-  margin: -40px auto;
-
-}
-
-/* 
-  =====================================================
-  Contact (own page)
-  =====================================================
-*/
-
-.contactmessage {
-  margin: -200px auto -100px;
+  background-image: url("../images/homepageabt.png");
+  background-size: 100%;
+  height: 450px;
+  text-align: center;
+  background-repeat: no-repeat;
   display: flex;              /* establish flex container */
   flex-direction: column;     /* stack flex items vertically */
   justify-content: center;    /* center items vertically, in this case */
-  align-items: center;
+  align-items: center; 
+
 }
 
-.contactmessage h1 {
+.about h3 {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
-  font-size: 26px;
-  color: #282F36;
-  font-weight: 500;
-  margin: 10px;
+  font-size: 30px;
+  margin-top: -5px;
+  color: #282525;
+  letter-spacing: 0.17px;
 }
-
-.contactmessage iframe {
-  display: block;
-  margin: auto;
+.about p {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  color: #282525;
+  margin-top: -10px;
+  width: 600px;
 }
 
 /* 
@@ -231,9 +253,12 @@ header .nav ul li.hamburger-icon {
   flex-direction: column;     /* stack flex items vertically */
   justify-content: center;    /* center items vertically, in this case */
   align-items: center; 
-  background-image: linear-gradient(-180deg, #FFFFFF 0%, #56E2F4 100%);
-  height: 290px;
-  margin-top: 35px;
+  background-image: url("../images/homepagecontact.png");
+  background-size: 150%;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 300px;
+  margin-top: 30px;
 }
 
 .contact h3 {
@@ -258,10 +283,39 @@ header .nav ul li.hamburger-icon {
   =====================================================
 */
 
+.containerbacking {
+  background-image: url("../images/containerbacking.png");
+  background-size: 700%;
+}
+
+.hero-cs {
+  background-image: url("../images/casestudytop.png");
+  background-size: 120%;
+  background-repeat: no-repeat;
+  display: flex;              /* establish flex container */
+  flex-direction: column;     /* stack flex items vertically */
+  justify-content: center;    /* center items vertically, in this case */
+  align-items: center; 
+}
+
 .logo {
   max-height: 160px;
-  margin: 40px auto;
-  clear: both;
+  margin: 20px;
+}
+
+.hero-cs h1 {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  color: #000000;
+  font-size: 34px;
+  font-weight: 300;
+}
+
+.hero-cs h3 {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  color: #515C67;
+  font-size: 20px;
+  margin-top: -20px;
+  font-weight: 100;
 }
 
 .cornerlogo {
@@ -272,10 +326,10 @@ header .nav ul li.hamburger-icon {
 
 .container {
   max-width: 1000px;
-  margin: 0 20% -50px;
+  margin: 0 20%;
 }
 
-.one-half {
+.container .one-half {
   width: 46%;
   margin: 15px;
   display: inline-block;
@@ -304,7 +358,6 @@ header .nav ul li.hamburger-icon {
   font-size: 22px;
   color: #282F37;
   padding-bottom: 3px;
-  border-bottom: 2px solid #6C7A88;
 }
 
 .container p {
@@ -330,7 +383,7 @@ margin-top: 20px;
   font-size: 20px;
   color: #6C7A88;
   font-weight: 500;
-  border-bottom: 2px solid #0FBCDE;
+  border-bottom: 2px solid #6CB2F8;
 }
 
 .container hr {
@@ -351,6 +404,7 @@ margin-top: 20px;
   flex-wrap: wrap;    
   justify-content: center;
   align-items: center;
+  background-color: #FFFFFF;
 }
 
 .container .multimages img {
@@ -400,6 +454,10 @@ margin-top: 20px;
   width: 46%;
 }
 
+img#shizukadrawn {
+  width: 40%;
+  margin-left: 20px;
+}
 /* 
   =====================================================
   Footer
@@ -455,26 +513,42 @@ footer ul li img {
   align-items: center; 
 }
 
-header .nav ul li a {
+.pagetop .nav ul li a {
   font-size: 20px;
+}
+
+.about p {
+  width: 500px;
+  margin-left:100px; 
+}
+
+.about h3 {
+  margin-top: -100px;
+  margin-left: 100px;
+}
+
+.about {
+  height: 600px;
+  background-size: 130%;
 }
 
 }
 
 @media (max-width:2000px) {
 
-header .site-logo img {
+.nav.site-logo img {
   max-height: 60px;
   margin-top: 20px;
   margin-right: 0;
   margin-left: 5px;
+  display: inline-block;
 }
 
-header .nav ul li {
+.pagetop .nav ul li {
   margin: 25px 15px;
 }
 
-header .nav ul li a {
+.pagetop .nav ul li a {
   font-size: 18px;
 }
 
@@ -489,45 +563,31 @@ header .nav ul li a {
 
 @media (max-width:925px) {
 
-div.nav ul li {
-  display: none;
-}
-
-div.nav ul li.hamburger-icon {
-    float: right;
-    display: inline-block;
-    margin-top: 10px;
-  }
-
-div.nav.responsive {
-  position: relative;
-}
-  div.nav.responsive ul li.hamburger-icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  div.nav.responsive ul {
-    background-color: #FFFFFF;
-    margin-top: 30px;
-    margin-right: 20px;
-    width: 150px;
-  }
-
-  div.nav.responsive li {
-    float: none;
-    display: inline;
-  }
-
-  div.nav.responsive li a {
-    display: block;
-    text-align: left;
-  }
-
   .container .va {
     vertical-align: top;
   }
+
+   .hero {
+  background-position: center top;
+  background-size: 150%;
+ }
+
+ .about {
+  background-size: 200%;
+  text-align: right;
+ }
+
+ .about p {
+  margin-left: auto;
+  margin-right: 30px;
+  width: 350px;
+ }
+
+ .about h3 {
+  padding-top: 50px;
+  margin-left: auto;
+  margin-right: 40px;
+ }
 }
 
 
@@ -540,33 +600,78 @@ div.nav.responsive {
   height: 30px;
 }
 
+.about {
+  background-image: url("../images/homepageabt2.png");
+  background-size: 1500px;
+  background-position: top right;
+  justify-content: flex-end;
+  height: 1000px;
+  width: 100%;
+  margin: 0;
+}
+
+.about h3 {
+  margin-top: -50px;
+}
+
+.about p {
+  width: 300px;
+  margin-right: 10px;
+}
+
+.case-studies .csbacking {
+  height: 450px;
+  display: flex;              /* establish flex container */
+  flex-direction: column;     /* stack flex items vertically */
+  justify-content: center;    /* center items vertically, in this case */
+  align-items: center; 
+
+}
+
+.case-studies .csbacking p {
+  font-size: 18px;
+}
+
+.case-studies .csbacking img {
+  width: 200px;
+  margin-bottom: -20px;
+}
+
 }
 
 @media (max-width:600px) {
 
-  header .site-logo img {
-  max-height: 30px;
-  margin-top:30px;
-  margin-right: 0;
+ #vismenu {
+  display: none;
+ }
+
+ #dropitnav {
+  display: block;
+ }
+
+.pagetop .nav ul li {
+  margin: 5px 0;
 }
 
- div.nav.responsive ul {
-    margin-top: 30px;
-    margin-right: 20px;
-    width: 100px;
-  }
+.contact {
+  background-size: 1300px;
+  height: 300px;
+}
+
+.hero {
+   background-size: 200%;
+  height: 200px;
+}
 
   .hero .herotext h1 {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 500;
-  margin-top: 100px;
 }
 
 .hero .herotext h2 {
-  font-size: 18px;
+  font-size: 16px;
   width: 300px;
-  float: right;
-  margin-top: 20px;
+  margin-top: -10px;
 }
 
 footer ul li {
@@ -595,14 +700,6 @@ footer ul li {
     height: 175px;
   }
 
-  .about img {
-    height: 300px;
-  }
-
-  .about p {
-    font-size: 16px;
-  }
-
 .container .quote {
   margin-top: -30px;
 }
@@ -619,10 +716,6 @@ footer ul li {
   margin-left: 10%;
   margin-right: 10%;
 }
-.about {
-  margin-left: 10%;
-  margin-right: 10%;
-}
 
 }
 
@@ -634,10 +727,6 @@ footer ul li {
   margin-right: 10%;
 }
 
-.about {
-  margin-left: 10%;
-  margin-right: 10%;
-}
 }
 
 @media (min-width: 320px) and (max-width: 550px) and (min-height: 680px) 
@@ -648,37 +737,9 @@ footer ul li {
   margin-right: 10%;
 }
 
-.about {
-  margin-left: 10%;
-  margin-right: 10%;
-}
-}
-
-@media (max-width: 360px) {
-   div.nav.responsive ul {
-    margin-top: 10px;
-    margin-right: 20px;
-    width: 100px;
-  }
 }
 
 @media (max-width: 400px) {
-
-header .site-logo img {
-  max-height: 25px;
-  margin-top:30px;
-  margin-right: 0;
-  margin-left: 5px;
-  padding-right: 0;
-}
-
-div.nav ul li.hamburger-icon img{
-  height: 30px;
-}
-
-div.nav ul li.hamburger-icon {
-  margin: 10px 0;
-}
 
 footer ul li {
   display: inline-block;
