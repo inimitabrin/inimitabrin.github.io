@@ -283,10 +283,39 @@ body {
   =====================================================
 */
 
+.containerbacking {
+  background-image: url("../images/containerbacking.png");
+  background-size: 700%;
+}
+
+.hero-cs {
+  background-image: url("../images/casestudytop.png");
+  background-size: 120%;
+  background-repeat: no-repeat;
+  display: flex;              /* establish flex container */
+  flex-direction: column;     /* stack flex items vertically */
+  justify-content: center;    /* center items vertically, in this case */
+  align-items: center; 
+}
+
 .logo {
   max-height: 160px;
-  margin: 40px auto;
-  clear: both;
+  margin: 20px;
+}
+
+.hero-cs h1 {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  color: #000000;
+  font-size: 34px;
+  font-weight: 300;
+}
+
+.hero-cs h3 {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  color: #515C67;
+  font-size: 20px;
+  margin-top: -20px;
+  font-weight: 100;
 }
 
 .cornerlogo {
@@ -297,10 +326,10 @@ body {
 
 .container {
   max-width: 1000px;
-  margin: 0 20% -50px;
+  margin: 0 20%;
 }
 
-.one-half {
+.container .one-half {
   width: 46%;
   margin: 15px;
   display: inline-block;
@@ -329,7 +358,6 @@ body {
   font-size: 22px;
   color: #282F37;
   padding-bottom: 3px;
-  border-bottom: 2px solid #6C7A88;
 }
 
 .container p {
@@ -355,7 +383,7 @@ margin-top: 20px;
   font-size: 20px;
   color: #6C7A88;
   font-weight: 500;
-  border-bottom: 2px solid #0FBCDE;
+  border-bottom: 2px solid #6CB2F8;
 }
 
 .container hr {
@@ -376,6 +404,7 @@ margin-top: 20px;
   flex-wrap: wrap;    
   justify-content: center;
   align-items: center;
+  background-color: #FFFFFF;
 }
 
 .container .multimages img {
@@ -425,6 +454,10 @@ margin-top: 20px;
   width: 46%;
 }
 
+img#shizukadrawn {
+  width: 40%;
+  margin-left: 20px;
+}
 /* 
   =====================================================
   Footer

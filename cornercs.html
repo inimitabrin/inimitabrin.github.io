@@ -13,47 +13,55 @@
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/dropit.css">
 
   <!-- JS -->
-  <script src="js/responsivemenu.js"></script>
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/dropit.js"></script>
 </head>
 
 <body>
-  <header>
+  <div class="pagetop">
+    <div class="nav">
     <div class="site-logo"><a href="index.html"><img src="images/logo.png" /></a></div>
-    <div class="nav" id="nav">
-      <ul>
-        <li><a href="about.html">About</a></li>
+      <ul id="vismenu">
         <li><a href="index.html#case-studies">Work</a></li>
         <li><a href="http://www.breannabliss.com/files/breannablissresume.pdf">Resume</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li class="hamburger-icon">
-          <a href="javascript:void(0);" onclick="myFunction()"><img src="images/hamburger.png" /></a>
-        </li>
-      </ul>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      <ul id="dropitnav" class="menu">
+      <li><a href="#" class="btn">&#9776;</a>
+        <ul>
+        <li><a href="index.html#case-studies">Work</a></li>
+        <li><a href="http://www.breannabliss.com/files/breannablissresume.pdf">Resume</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </li>
+     </ul>
     </div>
-  </header>
-  <div class="hero">
-    <img src="images/corner2.png" alt="Corner logo" class="cornerlogo" /><!--<img src="images/cornertop.png" alt="" class="bg"/>-->
   </div>
+  <div class="hero-cs">
+    <img src="images/corner2.png" alt="Corner logo" class="cornerlogo" /><!--<img src="images/cornertop.png" alt="" class="bg"/>-->
+    <h1>Corner</h1>
+    <h3>the SAAS for saving and sharing</h3>
+  </div>
+  <div class="containerbacking">
   <div class="container">
-    <div class="jumpto">
+    <!--<div class="jumpto">
       <h1>Jump to:  <a href="#summary">Summary</a> - <a href="#problem">Problem</a> - <a href="#solution">Solution</a> - <a href="#process">Process</a> - <a href="#conclusions">Conclusions</a> - <a href="#next">What's next</a></h1>
-    </div>
+    </div>-->
     <div id="summary" class="contentitem">
-      <h2>Summary</h2>
       <p>With countless items requiring our attention being thrown at us every day, old systems of collecting and organizing data are not always up to the immense task given them. Corner seeks to provide a clean and simple way of bringing together and sorting notes, pictures, and links that inspire and motivate.</p>
     </div>
     <div id="problem" class="contentitem">
-      <h2>Problem</h2>
       <p>The abundance of material available to anyone with access to a computer and an Internet connection means that any method to compile the material you want to revisit and share must be robust and easy to organize. However, current methods--note-taking apps and browser bookmarks, for example--quickly become cluttered, which means it’s hard to find the things you want to find, and don’t stay updated.</p>
     </div>
     <div id="solution" class="contentitem">
-      <h2>Solution</h2>
       <p>Corner is a SAAS (software as a service) that features the ability to save and share notes, images, and links, then organize them via tags and ‘boxes’ (a collection of related items). <a href="https://invis.io/D691SM37M">A clickable prototype can be found here</a> <a href="https://inimitabrin.github.io/corner/">and an HTML/CSS version of the homepage here.</a></p>
     </div>
     <div id="process" class="contentitem">
-      <h2>Process</h2>
       <h3>survey</h3>
       <p>Corner was my first fully realized design project, and I was eager from the very beginning to apply what I had learned from my background in psychology and graphic design in order to build something new.<br><br>I started by drawing from psychology. There’s a principle called “theory of mind”, which is basically the idea that a person can look at another person and understand that they have different thoughts, feelings, and desires from their own. Most neurotypical people develop this ability when they’re fairly young, but in my experience, many either don’t use it or overestimate its capacity to predict the behavior of other people. The point is, you can’t really know what another person is thinking unless you ask them directly.<br><br>For this reason, I began with a user survey, taken from a sample of fellow designers, friends and family, and an assortment of volunteers from Reddit. In it, I asked about online browsing habits and methods of saving content and taking notes. From this information and a few informal interviews, I created three user personas--the three archetypal people that would become users of Corner.</p>
      <div class="multimages">
@@ -88,10 +96,11 @@
     </div>
   </div>
   </div>
+  </div>
   <div class="contact">
     <h3>See something interesting?</h3>
     <h4>Let's talk about it!</h4>
-    <a class="button" href="contact.html">Contact me</a>
+    <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSd855zIYNIu1sd2Fcq_-_vFrscvY2BGG1HIUvXvWlsH4wviqA/viewform?usp=sf_link">Contact me</a>
   </div>
   <footer>
   <p>&copy; 2017 Breanna Bliss</p>
@@ -109,6 +118,11 @@
   ga('create', 'UA-92234468-1', 'auto');
   ga('send', 'pageview');
 
+</script>
+
+<script>  $(document).ready(function() {
+  $('#dropitnav').dropit();
+  });
 </script>
 </body>
 </html>
