@@ -286,12 +286,38 @@ body {
 .containerbacking {
   background-image: url("../images/containerbacking.png");
   background-size: 700%;
+  background-position: center center;
+}
+
+#cornertop {
+  background-image: url("../images/cornertop.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#lunchbreaktop {
+  background-image: url("../images/lunchbreaktop.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+#kitchkittop {
+  background-image: url("../images/kitchkittop.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#shizukatop {
+  background-image: url("../images/shizukatop.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .hero-cs {
-  background-image: url("../images/casestudytop.png");
-  background-size: 120%;
-  background-repeat: no-repeat;
   display: flex;              /* establish flex container */
   flex-direction: column;     /* stack flex items vertically */
   justify-content: center;    /* center items vertically, in this case */
@@ -301,6 +327,16 @@ body {
 .logo {
   max-height: 160px;
   margin: 20px;
+}
+
+#process ul li {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+font-size: 20px;
+color: #282F36;
+line-height: 40px;
+font-weight: 100;
+margin-bottom: 40px;
+margin-top: 20px;
 }
 
 .hero-cs h1 {
@@ -326,7 +362,7 @@ body {
 
 .container {
   max-width: 1000px;
-  margin: 0 20%;
+  margin: -20px 20% -40px;
 }
 
 .container .one-half {
@@ -404,7 +440,6 @@ margin-top: 20px;
   flex-wrap: wrap;    
   justify-content: center;
   align-items: center;
-  background-color: #FFFFFF;
 }
 
 .container .multimages img {
@@ -534,6 +569,14 @@ footer ul li img {
 
 }
 
+@media (max-width: 1335px) {
+  .container .one-half {
+  width: 90%;
+  margin: 15px;
+  display: block;
+}
+}
+
 @media (max-width:2000px) {
 
 .nav.site-logo img {
@@ -588,6 +631,7 @@ footer ul li img {
   margin-left: auto;
   margin-right: 40px;
  }
+
 }
 
 
@@ -679,7 +723,6 @@ footer ul li {
   list-style-type: none;
   margin: 20px 10px 0;
   }
-
 }
 
 @media (max-width:482px) {
